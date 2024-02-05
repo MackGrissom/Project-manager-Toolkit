@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Condensed, Roboto_Flex, Roboto_Mono } from "next/font/google";
+import { Comfortaa, Inter, Roboto_Condensed, Roboto_Flex, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
 import Navigation from "@/components/site/navigation";
 import { ThemeProvider } from "@/providers/theme-provider";
 
-const inter = Roboto_Condensed({ subsets: ["latin"] });
+const font = Comfortaa({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ZenStream",
@@ -21,7 +21,7 @@ export default function RootLayout({
       <html 
       lang="en" suppressHydrationWarning>
        
-          <body className={inter.className}>
+          <body className={font.className}>
           <ThemeProvider
         attribute="class"
         defaultTheme="system"
