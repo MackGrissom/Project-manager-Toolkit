@@ -135,10 +135,11 @@ const AgencyDetails = ({ data }: Props) => {
       }
 
       newUserData = await initUser({ role: 'AGENCY_OWNER' })
-      if (!data?.id) {
+      if (!data?.customerId && !custId) return
 
       const response = await upsertAgency({
         id: data?.id ? data.id : v4(),
+        customerId: data?.customerId || custId || '',
         address: values.address,
         agencyLogo: values.agencyLogo,
         city: values.city,
@@ -154,13 +155,11 @@ const AgencyDetails = ({ data }: Props) => {
         connectAccountId: '',
         goal: 5,
       })
-    }
       toast({
         title: 'Created Agency',
       })
-    
       if (data?.id) return router.refresh()
-      if (Response) {
+      if (response) {
         return router.refresh()
       }
     } catch (error) {
@@ -172,8 +171,6 @@ const AgencyDetails = ({ data }: Props) => {
       })
     }
   }
-
-
   const handleDeleteAgency = async () => {
     if (!data?.id) return
     setDeletingAgency(true)
