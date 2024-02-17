@@ -29,12 +29,12 @@ import Wallet from '@/components/icons/wallet'
 import Warning from '@/components/icons/warning'
 export const pricingCards = [
   {
-    title: 'Starter',
-    description: 'Perfect for trying out plura',
+    title: 'Trial',
+    description: 'Perfect for trying out ZenWorks',
     price: 'Free',
     duration: '',
     highlight: 'Key features',
-    features: ['3 Sub accounts', '2 Team members', 'Unlimited pipelines'],
+    features: ['1 Sub accounts', '2 Team members', 'Unlimited pipelines', ],
     priceId: '',
   },
   {
@@ -43,7 +43,7 @@ export const pricingCards = [
     price: '$100',
     duration: 'month',
     highlight: 'Key features',
-    features: ['Rebilling', '24/7 Support team'],
+    features: ['Rebilling', '24/7 Support team', 'Unlimited Sub Accounts', 'Unlimited Team Members','1-1 contact with ZenWorks'],
     priceId: 'price_1OgltoDCridLrfnFRgfdcnN3',
   },
   {
@@ -52,13 +52,13 @@ export const pricingCards = [
     price: '$40',
     duration: 'month',
     highlight: 'Everything in Starter, plus',
-    features: ['Unlimited Sub accounts', 'Unlimited Team members'],
+    features: ['Unlimited Sub accounts', 'Unlimited Team members',],
     priceId: 'price_1OgltoDCridLrfnFiMsz3Com',
   },
 ]
 
 export const addOnProducts = [
-  { title: 'Priority Support', id: 'prod_PNjJAE2EpP16pn' },
+  { title: 'Priority Support', id: 'price_1Oh2o4DCridLrfnFNBGHC3bO' },
 ]
 
 export const icons = [

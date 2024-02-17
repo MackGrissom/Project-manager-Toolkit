@@ -30,7 +30,7 @@ import {
           <div className="bg-gradient-to-r from-[#fab915] to-secondary-foreground text-transparent bg-clip-text relative">
             <h1 className=" text-9xl text-bold text-center md:text-[150px] pb-11">
               {" "}
-              ZenStream
+              ZenWorks
             </h1>
           </div>
           <div className="flex justify-center items-center relative md:mt-[-70px]">

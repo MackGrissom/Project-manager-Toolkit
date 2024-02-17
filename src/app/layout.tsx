@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 const font = Comfortaa({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ZenStream",
+  title: "ZenWorks",
   description: "Run and entire agency in one platform",
 };
 
