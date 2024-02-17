@@ -6,6 +6,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
+import Features from "@/components/ui/features";
   import { pricingCards } from "@/lib/constants";
   import clsx from "clsx";
   import { Check } from "lucide-react";
@@ -49,6 +50,8 @@ import {
           <p className="text-mute-foreground text-center">
             Website Builder, CRM, Analytics, Project Management and payment processing - all in one
           </p>
+
+          <Features />
           <div className="flex justify-center gap-4 flex-wrap mt-6">
             {pricingCards.map((card) => (
               <Card
