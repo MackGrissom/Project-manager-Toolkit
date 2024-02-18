@@ -1,4 +1,5 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { Calendar } from 'lucide-react'
 import Image from 'next/image'
 
 const features = [
@@ -12,6 +13,11 @@ const features = [
     name: 'Payment Processing',
     description: 'Simply connect your stripe account and charge clients directly while managing your income',
     icon: LockClosedIcon,
+  },
+  {
+    name: 'Calendar & Meeting Manager',
+    description: 'Manage and send meeting requests directly from your dashboard. Link your Zoom, Google meet and join directly from your dashboard',
+    icon: Calendar,
   },
   {
     name: 'Project Management',
