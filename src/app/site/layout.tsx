@@ -1,4 +1,5 @@
 import Navigation from '@/components/site/navigation'
+import Footer from '@/components/ui/footer'
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark } from '@clerk/themes'
 import React from 'react'
@@ -9,6 +10,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <main className="h-full">
         <Navigation />
         {children}
+        <Footer/>
       </main>
     </ClerkProvider>
   )
